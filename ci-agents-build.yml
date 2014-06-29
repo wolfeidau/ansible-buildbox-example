@@ -1,0 +1,8 @@
+---
+- hosts: agents
+  user: root
+  vars_files:
+    - "vars/ci.yml"
+  roles:
+    - bootstrap
+    - { role: wolfeidau.buildbox, buildbox_token: "XXXXX" }
