@@ -5,4 +5,5 @@
     - "vars/ci.yml"
   roles:
     - bootstrap
+    - { role: wandergeek.golang }
     - { role: wolfeidau.buildbox, buildbox_token: "XXXXX" }
